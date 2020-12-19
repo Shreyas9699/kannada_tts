@@ -32,35 +32,6 @@ def play():
 def form():
     return render_template('frontend.html')'''
 
-@app.route('/upload', methods=['POST', 'GET'])
-def upload():
-    if request.method == 'POST':
-        if file and allowed_file(file.filename):
-            f = request.files['file']
-            file_contents = f.stream.read().decode("utf-8")
-
-            inp = transform(file_contents)
-
-            print(inp)
-            inp=(transliterate(inp, sanscript.ITRANS, sanscript.KANNADA))
-            print(inp)
-
-            from gtts import gTTS
-            myobj = gTTS(text=inp, lang="kn", slow=False)
-
-            def save_file():
-
-                audio_file = ("output.mp3")
-                os.chdir('C:/Users/shrey/Desktop/kannada_tts/env/static/audio')
-
-                myobj.save(audio_file)
-                print("Done")
-                save_file()
-                #f.save(secure_filename(f.filename))
-                p = vlc.MediaPlayer("C:/Users/shrey/Desktop/kannada_tts/env/static/audio/output.mp3")
-                p.play()
-            return inp
-
 
 @app.route('/submit',methods = ['POST'])
 def submit():
