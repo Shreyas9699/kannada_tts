@@ -4,23 +4,41 @@
 <head>
     <title>ಕನ್ನಡ</title>
 </head>
-<br><br><br><br><br><br><br><br>
+
+<br><br>
+
+<style>
+    body {
+        background-image: url('static/901011.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    textarea {
+        overflow: hidden;
+}
+</style>
 
 <body style="background-image: url('static/901011.jpg')">
     <center>
         <font face="courier" color="white">
             <p id="try">Input text here</p>
-            <input type="text" name="name" id="testinput"><br><br>
+            <textarea name="Text1" cols= "40" onkeyup="autoheight(this)" id="testinput"></textarea>
+            <br><br>
             <button id="btn1" class="button" value="identify" onclick="passParam(document.getElementById('testinput').value)">Play </button><br><br>
-            <button id="btn2" class="button" value="identify" onclick="window.location.href = 'http://127.0.0.1:5000';">Reset</button><br><br>
-
             <body onload="init()">
                 <input id="fileInput" type="file" name="file" />
             </body>
+            <br><br><br>
+            <button id="btn2" class="button" value="identify" onclick="window.location.href = 'http://127.0.0.1:5000';">Reset</button><br><br>
             <h2 id="id2"></h2>
             <script>
                 function init() {
                     document.getElementById('fileInput').addEventListener('change', handleFileSelect, false);
+                }
+
+                function autoheight(x) {
+                    x.style.height = "10px";
+                    x.style.height = (15+x.scrollHeight)+"px";
                 }
 
                 function handleFileSelect(event) {

@@ -21,3 +21,10 @@ pip install gTTS
 execute run.py
 
 Note: make sure to chnage path in run.py at line 39 and 88 before running run.py
+
+Sample Text:
+ನಮಸ್ಕಾರ, ನಾನು ಕನ್ನಡ ಪಠ್ಯವನ್ನು ಭಾಷಣಕ್ಕೆ ಪರಿವರ್ತಿಸುತ್ತೇನೆ.
+
+ಹಲೋ ವರ್ಲ್ಡ್! 
+ಭಾಷಣ ಪ್ಯಾರಾಗ್ರಾಫ್‌ಗೆ ಇದು ನನ್ನ ಮೊದಲ ಕನ್ನಡ ಪಠ್ಯವಾಗಿದೆ. 
+ಅದು ಸರಿ ಎಂದು ಭಾವಿಸುತ್ತೇವೆ. ಯಾವುದೇ ನ್ಯೂನತೆಗಳು ನಾನು ದೋಷರಹಿತವಾಗಿರಲು ಬಯಸುತ್ತೇನೆ!
