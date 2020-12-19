@@ -21,5 +21,3 @@ pip install gTTS
 execute run.py
 
 Note: make sure to chnage path in run.py at line 39 and 88 before running run.py
-
-Venv = .\env\Scripts\activate
