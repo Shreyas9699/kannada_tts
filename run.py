@@ -9,7 +9,7 @@ import vlc
 from indic_transliteration import sanscript
 from indic_transliteration.sanscript import SchemeMap, SCHEMES, transliterate
 
-UPLOAD_FOLDER = 'C:/Users/shrey/Desktop/kannada_tts/env/uploads'
+UPLOAD_FOLDER = 'C:/Users/shrey/Desktop/kannada_tts/'
 ALLOWED_EXTENSIONS = {'txt', 'docx'}
 
 app = flask.Flask(__name__)
@@ -28,11 +28,6 @@ def home():
 def play():
 	return render_template("play.html")
 
-'''@app.route('/form')
-def form():
-    return render_template('frontend.html')'''
-
-
 @app.route('/submit',methods = ['POST'])
 def submit():
 
@@ -48,14 +43,14 @@ def submit():
     def save_file():
 
         audio_file = ("output.mp3")
-        os.chdir('C:/Users/shrey/Desktop/kannada_tts/env/static/audio')
+        os.chdir('C:/Users/shrey/Desktop/kannada_tts/static/audio')
 
         myobj.save(audio_file)
 
         #os.system(audio_file)
         print("Done")
 
-        #os.remove("C:/Users/shrey/Desktop/kannada_tts/env/static/audio/output.mp3")
+        #os.remove("C:/Users/shrey/Desktop/kannada_tts/static/audio/output.mp3")
         """#opening,writing and closing the text file '<file_input>.txt'
         txt_file = open(file_input+".txt","w")
         txt_file.write(mytext)
@@ -93,11 +88,11 @@ def submit():
     pygame.display.set_mode()
     pygame.display.set_mode()
     mixer.init
-    mixer.music.load("C:/Users/shrey/Desktop/kannada_tts/env/static/audio/output.mp3")
+    mixer.music.load("C:/Users/shrey/Desktop/kannada_tts/static/audio/output.mp3")
     mixer.music.play()
     time.sleep(5)"""
     '''
-    p = vlc.MediaPlayer("C:/Users/shrey/Desktop/kannada_tts/env/static/audio/output.mp3")
+    p = vlc.MediaPlayer("C:/Users/shrey/Desktop/kannada_tts/static/audio/output.mp3")
     p.play()
     return inp
 

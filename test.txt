@@ -1,15 +1,6 @@
 ನನ್ನ ಹೆಸರು ಶ್ರೇಯಸ್.
 ನಮಸ್ಕಾರ, ನಾನು ಕನ್ನಡ ಪಠ್ಯವನ್ನು ಭಾಷಣಕ್ಕೆ ಪರಿವರ್ತಿಸುತ್ತೇನೆ.
 nana hesaru Shreyas.
-
-
-<br><br><br>
-<form action = 'http://127.0.0.1:5000', method="post" enctype="multipart/form-data">
-  <input type = "file" name="file" />
-  <input type="submit" value="upload">
-</form>
-<br><br>
-
 ಹಲೋ ವರ್ಲ್ಡ್! 
 ಭಾಷಣ ಪ್ಯಾರಾಗ್ರಾಫ್‌ಗೆ ಇದು ನನ್ನ ಮೊದಲ ಕನ್ನಡ ಪಠ್ಯವಾಗಿದೆ. 
 ಅದು ಸರಿ ಎಂದು ಭಾವಿಸುತ್ತೇವೆ. ಯಾವುದೇ ನ್ಯೂನತೆಗಳು ನಾನು ದೋಷರಹಿತವಾಗಿರಲು ಬಯಸುತ್ತೇನೆ!
