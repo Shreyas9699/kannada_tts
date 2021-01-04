@@ -23,7 +23,7 @@ pip install Flask-Table (if u get flask table module not found error)
 
 execute run.py
 
-Note: make sure to chnage path in run.py at line 39 and 88 before running run.py
+Note: make sure to chnage path in run.py at line 46 and 95 before running run.py
 
 Sample Text:
 ನಮಸ್ಕಾರ, ನಾನು ಕನ್ನಡ ಪಠ್ಯವನ್ನು ಭಾಷಣಕ್ಕೆ ಪರಿವರ್ತಿಸುತ್ತೇನೆ.
